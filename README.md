@@ -227,7 +227,7 @@ and also how to occupy whole node, visit:
 https://docs.computecanada.ca/wiki/Using_GPUs_with_Slurm
 
 
-
+### Interactive jobs
 Submitting interactive jobs (jobs that are not running in the background. 
 Instead, you can interact with the system having specifications of the submitted job)
 

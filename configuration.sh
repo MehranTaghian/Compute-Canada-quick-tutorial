@@ -8,8 +8,8 @@ pip3 install --no-index -r Compute-Canada/requirements.txt
 wget https://github.com/deepmind/mujoco/releases/download/2.1.0/mujoco210-linux-x86_64.tar.gz
 tar -xvf mujoco210-linux-x86_64.tar.gz
 mv mujoco210 ~/.mujoco/
-echo  'LD_LIBRARY_PATH=/home/taghianj/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/home/taghianj/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH' >> ~/.bashrc
 echo 'export PYTHONPATH=/home/taghianj/scratch/SAC_GCN:$PYTHONPATH' >> ~/.bashrc
-echo 'source ~/projects/def-zaiane/taghianj/env/bin/activate'
+echo 'source ~/projects/def-zaiane/taghianj/env/bin/activate' >> ~/.bashrc
 pip3 install -U 'mujoco-py<2.2,>=2.1'
 
