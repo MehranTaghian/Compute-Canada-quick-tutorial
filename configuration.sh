@@ -1,9 +1,10 @@
 cd ~/projects/def-zaiane/taghianj
 module load python/3.8.10
 virtualenv env
+source env/bin/activate
 module load cuda/11.4
 pip3 install --no-index torch torchvision torchaudio
-pip3 install --no-index -r requirements.txt
+pip3 install --no-index -r Compute-Canada/requirements.txt
 wget https://github.com/deepmind/mujoco/releases/download/2.1.0/mujoco210-linux-x86_64.tar.gz
 tar -xvf mujoco210-linux-x86_64.tar.gz
 mv mujoco210 ~/.mujoco/
