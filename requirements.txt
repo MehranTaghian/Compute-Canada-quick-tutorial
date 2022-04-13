@@ -5,3 +5,4 @@ torch-scatter
 tqdm
 gym
 pathlib
+networkx

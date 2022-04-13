@@ -232,7 +232,7 @@ Submitting interactive jobs (jobs that are not running in the background.
 Instead, you can interact with the system having specifications of the submitted job)
 
 ```bash
-$ salloc --time=1:0:0 --ntasks=2 # submit a 2-core interactive job for 1h
+$ salloc --gpus-per-node=1 --time=00:15:00 --mem=2G # submit a 2-core interactive job for 1h
 $ echo $SLURM_... # can check out Slurm environment variables
 $ ./serial # this would be a waste: we have allocated 2 cores
 $ srun ./mpi # run an MPI code, could also use mpirun/mpiexec
